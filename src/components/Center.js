@@ -39,7 +39,7 @@ function Center(props) {
                     <Card className="mx-auto my-5 border-0" style={styles.card}>
                         <Card.Title className="mx-auto mb-0" style={styles.title}>
                             HI<span style={{ color: "#FD5F00", fontFamily: "product sans", fontWeight: "bolder" }}>,</span> I AM<br />
-                                GOURAV<br />
+                                GOURAV -------<br />
                                 SAMAL<span style={{ color: "#FD5F00", fontFamily: "Product Sans", fontWeight: "bolder" }}>.</span>
 
                         </Card.Title>

@@ -79,7 +79,7 @@ function Header(props) {
                                 css={styles.navLink}
                                 className="text-white"
                             >
-                                AAAAAABOUT
+                                ABOUT
                             </Nav.Link>
                         </Nav.Item>
                         {proj === 0 && <Nav.Item

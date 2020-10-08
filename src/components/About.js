@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container, Col, Row, CardGroup, Card, Image } from 'react-bootstrap'
+import { Container, Col, Row, CardGroup, Card } from 'react-bootstrap'
 
 import profile from '../shared/Samal.jpg'
 

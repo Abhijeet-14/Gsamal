@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
-import { Card, Container, Button, Row, Col, CardGroup } from 'react-bootstrap'
-import styled from '@emotion/styled'
+import { Card, Container, Row, Col } from 'react-bootstrap'
+// import styled from '@emotion/styled'
 
 import About from './About'
 import Projects from './Projects'
@@ -8,8 +8,8 @@ import Experience from './Experience'
 import Blogs from './Blogs'
 
 import In from '../shared/insta3.png'
-import Gh from '../shared/gh4.png'
-import Yt from '../shared/yt2.png'
+// import Gh from '../shared/gh4.png'
+// import Yt from '../shared/yt2.png'
 
 import windowSize from 'react-window-size'
 

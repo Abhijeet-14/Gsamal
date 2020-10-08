@@ -1,6 +1,6 @@
 import React from 'react'
 import { Container, Col, Row, CardGroup, Card } from 'react-bootstrap'
-import styled from '@emotion/styled'
+// import styled from '@emotion/styled'
 
 // get our fontawesome imports
 // import { faHome } from "@fortawesome/free-solid-svg-icons";

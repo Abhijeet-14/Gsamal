@@ -52,7 +52,7 @@ function Center(props) {
                                 <button className="mt-3 btn" type="button"
                                     style={{ backgroundColor: "#FD5F00", color: "#fff", height: "3em", width: "10.5em" }}
                                 >
-                                    aDownload Rèsumè
+                                    Download Rèsumè
                                 </button>
                             </Card.Link>
                         </Card.Text>

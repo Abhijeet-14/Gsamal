@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import   useState  from 'react'
+import React, { useState, useEffect } from 'react'
 import {
     Nav,
     Navbar,
@@ -140,6 +140,22 @@ function Header(props) {
 
 
 export default Header
+
+
+
+const fadeMenu = keyframes`
+  from 0% {
+      opacity: 0
+  }
+
+  50% {
+      opacity: 0.8
+  }
+
+  100% {
+    opacity: 1
+  }
+`
 
 const styles = {
     container: css({

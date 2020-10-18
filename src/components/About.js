@@ -15,11 +15,11 @@ export default function About(props) {
 
 
     const handleImage = (src, alt) => {
-        setImage({ ...image, showImage: true, imageLink: src, imageTitle: alt })
+        setImage({ ...image, showImage: false, imageLink: src, imageTitle: alt })
     }
 
     const handleCut = () => {
-        setImage({ ...image, showImage: false })
+        setImage({ ...image, showImage: false, imageLink: "", imageTitle: "" })
     }
 
     const aboutMe = (
@@ -41,25 +41,25 @@ export default function About(props) {
     return (
         <>
             {image.showImage && <Container className="pb-5"
-                >
-                    <Row>
-                        <Col
-                            className="pb-2 text-right"
+            >
+                <Row>
+                    <Col
+                        className="pb-2 text-right"
+                    >
+                        <button className="btn" type="button"
+                            style={{ backgroundColor: "#FD5F00", color: "#fff", fontFamily: "cursive", fontWeight: "bold", height: "2em", width: "2em" }}
+                            onClick={() => handleCut()}
                         >
-                            <button className="btn" type="button"
-                                style={{ backgroundColor: "#FD5F00", color: "#fff", fontFamily:"cursive", fontWeight: "bold", height: "2em", width: "2em" }}
-                                onClick={() => handleCut()}
-                            >
-                                X
+                            X
                             </button>
-                        </Col>
-                    </Row>
-                    <Row className="pb-5">
-                        <Col>
-                            <ShowImage img={image} />
-                        </Col>
-                    </Row>
-                </Container>
+                    </Col>
+                </Row>
+                <Row className="pb-5">
+                    <Col>
+                        <ShowImage img={image} />
+                    </Col>
+                </Row>
+            </Container>
             }
 
             {!image.showImage &&
@@ -86,7 +86,7 @@ export default function About(props) {
                                 // style={{backgroundColor:"green"}} 
                                 >
                                     <ImgClick handleClick={() => handleImage(profile, "Gourav Samal")}>
-                                        <img src={profile} alt="Gourav Samal"
+                                        <img src={profile} alt="Profile Image: Gourav Samal"
                                             className="rounded-circle float-right block-example border border-warning"
                                         />
                                     </ImgClick>
@@ -109,9 +109,11 @@ export default function About(props) {
                                     <div className="mx-auto text-center"
                                     // style={{backgroundColor:"red"}}
                                     >
-                                        <img src={profile} alt="Profile Image" border="primary"
-                                            className=" rounded-circle block-example border border-warning"
-                                        />
+                                        <ImgClick handleClick={() => handleImage(profile, "Gourav Samal")}>
+                                            <img src={profile} alt="Profile Image: Gourav Samal" border="primary"
+                                                className=" rounded-circle block-example border border-warning"
+                                            />
+                                        </ImgClick>
                                     </div>
                                 </Col>
                                 {/* <Col className="col-1"></Col> */}

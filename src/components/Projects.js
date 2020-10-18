@@ -18,7 +18,7 @@ export default function Projects() {
                             Website : https://www.hackster.io/laserx/diagnostics-via-disc-5793c0
                             Repo     : https://github.com/zray007/Diagnostics-via-Disk
                         </Card>
-                        
+
                         <Card className="mt-sm-0 mt-md-2 ml-3 mr-4 mr-sm-5 ml-sm-5">
                             Microscopy Via DVD
                             The DVD based microscope is a special light microscope which uses a focused laser beam to scan the sample. The scanning is performed by driving the laser along the x and y axis. The image is processed by a custom software and the image is enhanced by using a Super resolution AI model.
@@ -28,54 +28,64 @@ export default function Projects() {
                     </CardGroup>
                 </Col>
             </Row>
-            <Row className="mt-sm-3 mt-0">
-                <Col>
-                    <CardGroup>
-                        <Card className="mt-sm-5 mt-md-2 ml-3 mr-4 mr-sm-5 ml-sm-5">
+
+            {false &&
+                <Row className="mt-sm-3 mt-0">
+                    <Col>
+                        <CardGroup>
+                            <Card className="mt-sm-5 mt-md-2 ml-3 mr-4 mr-sm-5 ml-sm-5">
+                                qwertyuiop<br />
                             qwertyuiop<br />
                             qwertyuiop<br />
-                            qwertyuiop<br />
-                        </Card>
-                        <Card className="mt-sm-5 mt-md-2 ml-3 mr-4 mr-sm-5 ml-sm-5">
-                            qwertyuiop<br />
-                            qwertyuiop<br />
-                            qwertyuiop<br />
-                        </Card>
-                    </CardGroup>
-                </Col>
-            </Row>
-            <Row className="mt-sm-3 mt-0">
-                <Col>
-                    <CardGroup>
-                        <Card className="mt-sm-5 mt-md-2 ml-3 mr-4 mr-sm-5 ml-sm-5">
+                            </Card>
+                            <Card className="mt-sm-5 mt-md-2 ml-3 mr-4 mr-sm-5 ml-sm-5">
+                                qwertyuiop<br />
                             qwertyuiop<br />
                             qwertyuiop<br />
-                            qwertyuiop<br />
-                        </Card>
-                        <Card className="mt-sm-5 mt-md-2 ml-3 mr-4 mr-sm-5 ml-sm-5">
-                            qwertyuiop<br />
-                            qwertyuiop<br />
-                            qwertyuiop<br />
-                        </Card>
-                    </CardGroup>
-                </Col>
-            </Row>
-            <Row className="mt-sm-3 mt-0">
-                <Col>
-                    <CardGroup>
-                        <Card className="mt-sm-5 mt-md-2 ml-3 mr-4 mr-sm-5 ml-sm-5">
+                            </Card>
+                        </CardGroup>
+                    </Col>
+                </Row>
+            }
+
+            {false &&
+                <Row className="mt-sm-3 mt-0">
+                    <Col>
+                        <CardGroup>
+                            <Card className="mt-sm-5 mt-md-2 ml-3 mr-4 mr-sm-5 ml-sm-5">
+                                qwertyuiop<br />
                             qwertyuiop<br />
                             qwertyuiop<br />
+                            </Card>
+                            <Card className="mt-sm-5 mt-md-2 ml-3 mr-4 mr-sm-5 ml-sm-5">
+                                qwertyuiop<br />
                             qwertyuiop<br />
-                        </Card>
-                        <Card className="mt-sm-5 mt-md-2 ml-3 mr-4 mr-sm-5 ml-sm-5">
+                            qwertyuiop<br />
+                            </Card>
+                        </CardGroup>
+                    </Col>
+                </Row>
+            }
+
+            {false &&
+                <Row className="mt-sm-3 mt-0">
+                    <Col>
+                        <CardGroup>
+                            <Card className="mt-sm-5 mt-md-2 ml-3 mr-4 mr-sm-5 ml-sm-5">
+                                qwertyuiop<br />
                             qwertyuiop<br />
                             qwertyuiop<br />
+                            </Card>
+                            <Card className="mt-sm-5 mt-md-2 ml-3 mr-4 mr-sm-5 ml-sm-5">
+                                qwertyuiop<br />
                             qwertyuiop<br />
-                        </Card>
-                    </CardGroup>
-                </Col>
-            </Row>
+                            qwertyuiop<br />
+                            </Card>
+                        </CardGroup>
+                    </Col>
+                </Row>
+            }
+            
         </Container>
     )
 }

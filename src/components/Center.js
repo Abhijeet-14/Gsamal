@@ -19,15 +19,15 @@ import windowSize from 'react-window-size'
 function Center(props) {
 
     const [open, setOpen] = useState({
-        proImg: 0,
-        projects: 0,
-        websites: 0,
-        backendApp: 0,
-        software: 0,
+        proImg:0,
+        blogs:0,
+        experience:0,
+        projects:0,
+        software:0,
     });
 
     useEffect(
-        () => props.windowWidth < 588 ? setOpen({ ...open, proImg: 0 }) : setOpen({ ...open, proImg: 1 })
+        () => props.windowWidth < 700 ? setOpen({ ...open, proImg: 0 }) : setOpen({ ...open, proImg: 1 })
         , [props.windowWidth]
     )
 

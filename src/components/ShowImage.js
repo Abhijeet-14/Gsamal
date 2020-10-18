@@ -18,6 +18,7 @@ function ShowImage(props) {
             setDim({ ...dim, height: props.windowHeight, width: props.windowWidth })
         }, [props.windowWidth, props.windowHeight]
     )
+    
     console.log(props)
 
     return (
@@ -27,7 +28,7 @@ function ShowImage(props) {
                 style={{ width: dim.windth, height: "100%", zIndex: 5, margin: "20" }}
             >
                 <Row
-                    style={{ zIndex: 10, backgroundColor: "black" }}
+                    style={{ zIndex: 10, backgroundColor: "black", opacity:"0.9" }}
                 >
                     <Col
                         className="text-right py-3"
@@ -37,7 +38,7 @@ function ShowImage(props) {
                     </Col>
                 </Row>
                 <Row
-                    style={{ zIndex: 10, backgroundColor: "black" }}
+                    style={{ zIndex: 10, backgroundColor: "black", opacity:"0.9" }}
                 // className="px-5 py-5"
                 >
                     <Col
@@ -50,7 +51,7 @@ function ShowImage(props) {
                     </Col >
                 </Row>
                 <Row
-                    style={{ zIndex: 10, backgroundColor: "black" }}
+                    style={{ zIndex: 10, backgroundColor: "black", opacity:"0.9" }}
                     className="text-right"
                 >
                     <Col className="py-2 text-center">

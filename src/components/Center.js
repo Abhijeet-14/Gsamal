@@ -7,6 +7,9 @@ import Projects from './Projects'
 import Experience from './Experience'
 import Blogs from './Blogs'
 
+// import Exp from './exp'
+
+
 import In from '../shared/insta3.png'
 // import Gh from '../shared/gh4.png'
 // import Yt from '../shared/yt2.png'
@@ -70,6 +73,8 @@ function Center(props) {
             {open.projects === 0 && <Projects />}
             {open.projects === 0 && <Experience />}
             {open.projects === 0 && <Blogs />}
+            {/* <Exp /> */}
+
         </Container >
     )
 }

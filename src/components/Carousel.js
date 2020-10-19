@@ -76,6 +76,13 @@ const MultiCarouselPage = () => {
                                     Button
                                 </MDBBtn>
                             </MDBCardBody>
+
+                            <MDBBtn color="primary" size="lg" rounded onClick={() => prev(itemId)}>
+                                <span style={{ fontSize: "2rem", fontStyle: "italic", color: "white" }}>&lt;</span>
+                            </MDBBtn>
+                            <MDBBtn color="primary" rounded onClick={() => next(itemId)}>
+                                <span style={{ fontSize: "2rem", fontStyle: "italic", color: "whitesmoke" }}>&gt;</span>
+                            </MDBBtn>
                         </MDBCard>
                     </MDBCol>
                 </MDBRow>
@@ -85,21 +92,21 @@ const MultiCarouselPage = () => {
 
 
     return (
-        <MDBContainer style={{backgroundColor:"black"}} className="mx-5 my-5">
+        <MDBContainer style={{ backgroundColor: "black" }} className="mx-5 my-5">
             <MDBCarousel activeItem={0} length={6} slide={true} showControls={true} showIndicators={true}>
                 <MDBCarouselInner>
                     <MDBRow>
                         <MDBCol className="d-flex justify-content-center">
-                        <MDBBtn color="primary" size="lg" rounded  onClick={() => prev(index)}>
-                            &lt;
-                        </MDBBtn>
-                        <MDBBtn color="primary" onClick={() => next(index)}>
-                            &gt;
-                        </MDBBtn>
+
                         </MDBCol>
                     </MDBRow>
                     <MDBRow>
-                        {block(index)}
+                        {block(0)}
+                        {block(1)}
+                        {block(2)}
+                        {block(3)}
+                        {block(4)}
+                        {block(5)}
                     </MDBRow>
                 </MDBCarouselInner>
             </MDBCarousel>

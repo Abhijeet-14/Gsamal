@@ -16,7 +16,7 @@ export default function Experience() {
         return (
             <Card border="warning"
                 // style={{ width: "20rem", height: "100%" }}
-                className="mt-sm-5 mt-md-5 mx-md-5  mx-sm-3"
+                className="mt-sm-5 mt-md-5 mx-md-4 mx-sm-3" 
             >
                 <Card.Img variant="top" src="demo/100px180?text=Image cap" alt="Image"/>
                 <Card.Body>

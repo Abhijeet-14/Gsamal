@@ -2,15 +2,6 @@ import React,{useState} from 'react'
 import { Container, Col, Row, CardGroup, Card, Carousel } from 'react-bootstrap'
 import styled from '@emotion/styled'
 
-
-import blog1_img0 from '../shared/b1_0.jpeg'
-import blog1_img1 from '../shared/b1_1.jpeg'
-import blog1_img2 from '../shared/b1_2.jpeg'
-import blog1_img3 from '../shared/b1_3.jpeg'
-import blog1_img4 from '../shared/b1_4.jpeg'
-import blog1_img5 from '../shared/b1_5.jpeg'
-
-
 export default function Projects() {
 
     const [index, setIndex] = useState(0);
@@ -62,88 +53,6 @@ export default function Projects() {
                         </Card>
                     </CardGroup>
                     
-                    <Carousel class=" my-auto mx-auto" 
-                            style={{ backgroundColor: "red" , height: "20%", width: "30%" }}
-                            activeIndex={index} 
-                            // defaultActiveIndex={0} 
-                            onSelect={handleSelect}
-                            pause='hover'
-                            wrap
-                            slide
-                            >
-
-                        <Carousel.Item index = {0} class="mt-sm-0 mt-md-2 ml-3 mr-4 mr-sm-5 ml-sm-5">
-                            <img
-                                className="d-block w-100"
-                                src={blog1_img0}
-                                alt="0th slide"
-                            />
-                            <Carousel.Caption>
-                                <h3 style={{color:"blue"}}>First slide label</h3>
-                                <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                            </Carousel.Caption>
-                        </Carousel.Item>
-                        <Carousel.Item index = {1} class="mt-sm-0 mt-md-2 ml-3 mr-4 mr-sm-5 ml-sm-5">
-                            <img
-                                className="d-block w-100"
-                                src={blog1_img1}
-                                alt="1st slide"
-                            />
-
-                            <Carousel.Caption>
-                                <h3>Second slide label</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                            </Carousel.Caption>
-                        </Carousel.Item>
-                        <Carousel.Item index = {2} class="mt-sm-0 mt-md-2 ml-3 mr-4 mr-sm-5 ml-sm-5">
-                            <img
-                                className="d-block w-100"
-                                src={blog1_img2}
-                                alt="2nd slide"
-                            />
-
-                            <Carousel.Caption>
-                                <h3>Third slide label</h3>
-                                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-                            </Carousel.Caption>
-                        </Carousel.Item>
-                        <Carousel.Item index = {3} class="mt-sm-0 mt-md-2 ml-3 mr-4 mr-sm-5 ml-sm-5">
-                            <img
-                                className="d-block w-100"
-                                src={blog1_img3}
-                                alt="3rd slide"
-                            />
-
-                            <Carousel.Caption>
-                                <h3>Third slide label</h3>
-                                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-                            </Carousel.Caption>
-                        </Carousel.Item>
-                        <Carousel.Item index = {4} class="mt-sm-0 mt-md-2 ml-3 mr-4 mr-sm-5 ml-sm-5">
-                            <img
-                                className="d-block w-100"
-                                src={blog1_img4}
-                                alt="4th slide"
-                            />
-
-                            <Carousel.Caption>
-                                <h3>Third slide label</h3>
-                                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-                            </Carousel.Caption>
-                        </Carousel.Item>
-                        <Carousel.Item index = {5} class="mt-sm-0 mt-md-2 ml-3 mr-4 mr-sm-5 ml-sm-5">
-                            <img
-                                className="d-block w-100"
-                                src={blog1_img5}
-                                alt="5th slide"
-                            />
-
-                            <Carousel.Caption>
-                                <h3>Third slide label</h3>
-                                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-                            </Carousel.Caption>
-                        </Carousel.Item>
-                    </Carousel>
                 </Col>
             </Row>
         </Container>

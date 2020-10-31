@@ -8,6 +8,7 @@ import Experience from './Experience'
 import Blogs from './Blogs'
 
 import Carousel from './Carousel'
+import MyCarousel from './MyCarousel'
 
 
 import In from '../shared/insta3.png'
@@ -73,7 +74,8 @@ function Center(props) {
             {open.projects === 0 && <Projects />}
             {open.projects === 0 && <Experience />}
             {open.projects === 0 && <Blogs />}
-            <Carousel />
+            {/* <Carousel /> */}
+            <MyCarousel />
 
         </Container >
     )

@@ -13,7 +13,8 @@ function Experience(props) {
 
     function block(heading, supervisor, position, duration, content, topic, link, id) {
         return (
-            <Card border="warning"
+            <Card // border="warning"
+                style={{ borderBlockColor: "orange" }}
                 className="mt-sm-5 mt-md-5 mx-md-4 mx-sm-3"
             >
                 {/* <Card.Img variant="top" src="demo/100px180?text=Image cap" alt="Image"/> */}

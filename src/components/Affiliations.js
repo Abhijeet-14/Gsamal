@@ -12,7 +12,8 @@ function Affiliations() {
 
     function block(title, duration, content, id) {
         return (
-            <Card border="warning"
+            <Card //border="warning"
+                style={{ borderBlockColor: "orange" }}
                 className="mt-sm-5 mt-md-5 mx-md-4 mx-sm-3"
             >
                 <Card.Body>

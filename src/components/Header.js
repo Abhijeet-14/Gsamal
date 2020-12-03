@@ -86,19 +86,6 @@ function Header(props) {
                             css={styles.navItem}
                             >
                             <Nav.Link
-                                href="#experience"
-                                eventkey="experience"
-                                css={styles.navLink}
-                                className="text-white"
-                            >
-                                EXPERIENCE
-                            </Nav.Link>
-                        </Nav.Item>
-                        }
-                        {proj === 0 && <Nav.Item
-                            css={styles.navItem}
-                            >
-                            <Nav.Link
                                 href="#projects"
                                 eventkey="projects"
                                 css={styles.navLink}
@@ -108,28 +95,41 @@ function Header(props) {
                             </Nav.Link>
                         </Nav.Item>
                         }
+                                                {proj === 0 && <Nav.Item
+                            css={styles.navItem}
+                            >
+                            <Nav.Link
+                                href="#experience"
+                                eventkey="experience"
+                                css={styles.navLink}
+                                className="text-white"
+                            >
+                                EXPERIENCE
+                            </Nav.Link>
+                        </Nav.Item>
+                        }
                         <Nav.Item
                             css={styles.navItem}
                         >
-                            <Nav.Link href="#blogs"
-                                eventKey="blogs"
+                            <Nav.Link href="#awards"
+                                eventKey="awards"
                                 css={styles.navLink}
                                 className="text-white"
                             >
-                                BLOGS/ARTICLES
+                                AWARDS
                             </Nav.Link>
                         </Nav.Item>
-                        {/* <Nav.Item
+                        <Nav.Item
                             css={styles.navItem}
                         >
-                            <Nav.Link href="#contact"
-                                eventKey="contact"
+                            <Nav.Link href="#affiliations"
+                                eventKey="affiliations"
                                 css={styles.navLink}
                                 className="text-white"
                             >
-                                CONTACT
+                                AFFILITATIONS
                             </Nav.Link>
-                        </Nav.Item> */}
+                        </Nav.Item>
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>

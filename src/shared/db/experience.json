@@ -1,0 +1,44 @@
+{
+    "experience":[
+        {
+            "heading": "Dr. Ashwin Gopinath, MIT, USA",
+            "supervisor": "",
+            "topic":"",
+            "position": "Lead Researcher",
+            "duration":"April 2020 - Present",
+            "content": "Working on 2 different AI based projects; AI model to classify Malarial parasites on a blood smear and Generative Adver-sarial Network(GAN) based image generation for generating blood smear microscopic image data sets for training other models.",
+            "link": "",
+            "id": 1
+        },
+        {
+            "heading": "Surface Engineering Group",
+            "supervisor": "Dr. Ajit Behera",
+            "topic":"Thermal Barrier Coatings (TBC’s)",
+            "position": "Research Assistant",
+            "duration":"April - Oct 2019",
+            "content": "Continued the research on TBC’s for turbine blades; characterized the mechanical and tribological properties of plasma coated Stainless steel(SS) samples. Characterized the TBC’s thermal resistance and oxidation properties. *Paper currently under review.",
+            "link": "",
+            "id": 2
+        },
+        {
+            "heading": "Hindustan Aeronautics Limited (HAL)",
+            "supervisor": "Priyabrata Mallick",
+            "topic":"Coatings and Heat Treatment Division",
+            "position": "Research Intern",
+            "duration":"May - July 2019",
+            "content": "Investigated the use of solid waste products generated during Steelmaking(LD SLudge) for TBC’s. Characterized the LD Sludge chemical composition, developed a beneficiation route for sludge and optimized the process parameters for plasma coating of L.D. Sludge powder on AISI 304 SS.",
+            "link": "",
+            "id": 3
+        },
+        {
+            "heading": "Inorganic Chemistry Group",
+            "supervisor": "Dr. Priyabrat Dash",
+            "topic": "Nanomaterials synthesis",
+            "position": "Research Assistant",
+            "duration": "Jan - April 2018",
+            "content": "Synthesis and characterization of Graphene oxide nanoparticles for wastewater filtration. Surveyed water quality and investigated the presence of heavy metals in local ground/drinking water.",
+            "link": "",
+            "id": 4
+        }
+    ]
+}

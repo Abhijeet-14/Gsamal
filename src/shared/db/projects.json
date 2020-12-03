@@ -1,0 +1,18 @@
+{
+    "projects": [
+        {
+            "title": "Diagnostics Via Disk",
+            "duration": "March 2020 - Present",
+            "reference": "Samal, G.;Gourichon, S.; Gopinath, A.;et al.",
+            "link": "https://www.hackster.io/laserx/diagnostics-via-disc-5793c0#story",
+            "content": "Led an international collaboration comprising engineers from France & India along with Prof.A. Gopinath, MIT to develop a novel method for detection of Covid-19 using DVD lasers."
+        },
+        {
+            "title": "AI based Laser Scanner Microscope",
+            "duration": "Jan 2020 - Present",
+            "reference": "Samal, G.; Krishna Gotti, V.; Gopinath, A.;et al.",
+            "link":"https://github.com/zray007/AI_Microscopy_via_DVD",
+            "content": "Built a special light microscope from spare DVD parts which performs Con-focal Fluorescence Microscopy. Developed an AI model for resolution enhancement."
+        }
+    ]
+}

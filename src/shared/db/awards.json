@@ -1,0 +1,40 @@
+{
+    "awards": [
+        {
+            "id": 1,
+            "title": "O.P. Jindal Engg. and Management Scholarship",
+            "subtitle": "O.P. Jindal Group",
+            "year": "2020"
+        },
+        {
+            "id": 2,
+            "title": "3rd Pos., Academic Excellence Award",
+            "subtitle": "NIT Rourkela",
+            "year": "2020"
+        },
+        {
+            "id": 3,
+            "title": "National Finals, Best Procurement Report Award",
+            "subtitle": "Formula Students EV Challenge",
+            "year": "2019"
+        },
+        {
+            "id": 4,
+            "title": "3rd Pos., Award of Excellence",
+            "subtitle": "DAV Institutions",
+            "year": "2017"
+        },
+        {
+            "id": 5,
+            "title": "National Finals, Honorable Mention",
+            "subtitle": "Eastern India Science Fair",
+            "year": "2014"
+        },
+        {
+            "id": 6,
+            "title": "3rd Pos., National Finals",
+            "subtitle": " MAX Life Igenious Scholarship",
+            "year": "2012"
+        }
+    ]
+}

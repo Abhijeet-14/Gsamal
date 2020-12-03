@@ -2,90 +2,54 @@ import React from 'react'
 import { Container, Col, Row, CardGroup, Card } from 'react-bootstrap'
 // import styled from '@emotion/styled'
 
+import db from '../shared/db/projects.json'
 
 export default function Projects() {
+
+
+    const projects = db.projects.map((project) => {
+        return block(project.title, project.content, project.duration, project.link, project.reference)
+    })
+
+    function block(title, content, duration, link, reference) {
+        return (
+            <Card //border="warning"
+                style={{ borderBlockColor: "orange" }}
+                className="mt-sm-5 mt-md-5 mx-md-4 mx-sm-3"
+            >
+                <Card.Body>
+                    <Card.Title className="mb-3"><h4>{title}</h4></Card.Title>
+                    {reference !== "" && <Card.Subtitle className="mb-2 text-left">
+                        <b>Reference: </b>{reference}
+                    </Card.Subtitle>
+                    }
+                    <Row className="mb-2">
+                        <Col className="">
+                            {duration}
+                        </Col>
+                    </Row>
+                    <Card.Text className="mb-1">
+                        <i className="fas fa-map-marker-alt">
+                            {content}
+                        </i>
+                    </Card.Text>
+                    {link !== "" && <Card.Link target="_blank" href={link} className="text-right mb-1">Project Link</Card.Link>}
+                </Card.Body>
+            </Card >
+        )
+    }
+
     return (
         <Container className="py-5" id="projects" style={{ backgroundColor: "" }}>
             <h2 className="my-4 d-flex justify-content-center" style={styles.software}>PROJECTS</h2>
             <hr />
             <Row className="mt-5">
                 <Col>
-                    <CardGroup className="mx-auto" style={styles}>
-                        <Card className="mt-sm-0 mt-md-2 ml-3 mr-4 mr-sm-5 ml-sm-5">
-                            DVD (Diagnostics via DVD)
-                            Built a diagnostic equipment to diagnose COVID 19 which uses easily available lasers found in CD DVD players, which employs cost-effective sample preparation methods to provide fast and reliable results.
-
-                            Website : https://www.hackster.io/laserx/diagnostics-via-disc-5793c0
-                            Repo     : https://github.com/zray007/Diagnostics-via-Disk
-                        </Card>
-
-                        <Card className="mt-sm-0 mt-md-2 ml-3 mr-4 mr-sm-5 ml-sm-5">
-                            Microscopy Via DVD
-                            The DVD based microscope is a special light microscope which uses a focused laser beam to scan the sample. The scanning is performed by driving the laser along the x and y axis. The image is processed by a custom software and the image is enhanced by using a Super resolution AI model.
-
-                            Repo: https://github.com/zray007/AI_Microscopy_via_DVD
-                        </Card>
+                    <CardGroup className="" style={styles}>
+                        {projects}
                     </CardGroup>
                 </Col>
             </Row>
-
-            {false &&
-                <Row className="mt-sm-3 mt-0">
-                    <Col>
-                        <CardGroup>
-                            <Card className="mt-sm-5 mt-md-2 ml-3 mr-4 mr-sm-5 ml-sm-5">
-                                qwertyuiop<br />
-                            qwertyuiop<br />
-                            qwertyuiop<br />
-                            </Card>
-                            <Card className="mt-sm-5 mt-md-2 ml-3 mr-4 mr-sm-5 ml-sm-5">
-                                qwertyuiop<br />
-                            qwertyuiop<br />
-                            qwertyuiop<br />
-                            </Card>
-                        </CardGroup>
-                    </Col>
-                </Row>
-            }
-
-            {false &&
-                <Row className="mt-sm-3 mt-0">
-                    <Col>
-                        <CardGroup>
-                            <Card className="mt-sm-5 mt-md-2 ml-3 mr-4 mr-sm-5 ml-sm-5">
-                                qwertyuiop<br />
-                            qwertyuiop<br />
-                            qwertyuiop<br />
-                            </Card>
-                            <Card className="mt-sm-5 mt-md-2 ml-3 mr-4 mr-sm-5 ml-sm-5">
-                                qwertyuiop<br />
-                            qwertyuiop<br />
-                            qwertyuiop<br />
-                            </Card>
-                        </CardGroup>
-                    </Col>
-                </Row>
-            }
-
-            {false &&
-                <Row className="mt-sm-3 mt-0">
-                    <Col>
-                        <CardGroup>
-                            <Card className="mt-sm-5 mt-md-2 ml-3 mr-4 mr-sm-5 ml-sm-5">
-                                qwertyuiop<br />
-                            qwertyuiop<br />
-                            qwertyuiop<br />
-                            </Card>
-                            <Card className="mt-sm-5 mt-md-2 ml-3 mr-4 mr-sm-5 ml-sm-5">
-                                qwertyuiop<br />
-                            qwertyuiop<br />
-                            qwertyuiop<br />
-                            </Card>
-                        </CardGroup>
-                    </Col>
-                </Row>
-            }
-            
         </Container>
     )
 }

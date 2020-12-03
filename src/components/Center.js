@@ -6,8 +6,10 @@ import About from './About'
 import Projects from './Projects'
 import Experience from './Experience'
 import Blogs from './Blogs'
+import Awards from './Awards'
+import Affiliations from './Affiliations'
 
-import Carousel from './Carousel'
+// import Carousel from './Carousel'
 import MyCarousel from './MyCarousel'
 
 
@@ -21,10 +23,13 @@ function Center(props) {
 
     const [open, setOpen] = useState({
         proImg:0,
-        blogs:0,
+        blogs:1,
         experience:0,
         projects:0,
         software:0,
+        myCarousel: 1,
+        awards: 0,
+        affilations: 0,
     });
 
     useEffect(
@@ -52,7 +57,7 @@ function Center(props) {
                                 METALLURGICAL {'&'} MATERIALS ENGINEERING<br />
                                  {/* {'&'}  */}
                             </div>
-                            <Card.Link target="_blank" href="https://drive.google.com/file/d/1SzjTrDVfOLNet4RFJPJVVPPhr86f7y66/view?usp=sharing">
+                            <Card.Link target="_blank" href="https://drive.google.com/file/d/14c4HNPQwqwutvpNN-gb_Y03fhDj0JlFJ/view">
                                 <button className="mt-3 btn" type="button"
                                     style={{ backgroundColor: "#FD5F00", color: "#fff", height: "3em", width: "10.5em" }}
                                 >
@@ -72,10 +77,12 @@ function Center(props) {
             </Row>
             <About proImg={open.proImg} />
             {open.projects === 0 && <Projects />}
-            {open.projects === 0 && <Experience />}
-            {open.projects === 0 && <Blogs />}
+            {open.experience === 0 && <Experience />}
+            {open.blogs === 0 && <Blogs />}
+            {open.awards === 0 && <Awards />}
+            {open.affilations === 0 && <Affiliations />}
             {/* <Carousel /> */}
-            <MyCarousel />
+            {open.myCarousel === 0 && <MyCarousel />}
 
         </Container >
     )
@@ -86,15 +93,8 @@ const styles = {
     container: {
         backgronudColor: "#F9F8EB",
     },
-    row: {
-    },
-    col: {
-
-    },
     card: {
         backgroundColor: "#F9F8EB",
-    },
-    body: {
     },
     title: {
         // backgroundColor: "yellow",
@@ -103,8 +103,6 @@ const styles = {
         fontWeight: "bold",
         textAlign: 'center',
         color: "#05004E",
-    },
-    subtitle: {
     },
     text: {
         fontFamily: 'Product Sans , Arial',

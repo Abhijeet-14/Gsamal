@@ -1,46 +1,61 @@
 import React from 'react'
 import { Container, Col, Row, CardGroup, Card } from 'react-bootstrap'
 
-import demo from '../shared/Samal.jpg'
+import db from '../shared/db/experience.json'
+
+import windowSize from 'react-window-size'
 
 // import styled from '@emotion/styled'
 
-// get our fontawesome imports
-// import { faHome } from "@fortawesome/free-solid-svg-icons";
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
+function Experience(props) {
 
 
-export default function Experience() {
-
-    function block( heading, supervisor, position, duration, content, link) {
+    function block(heading, supervisor, position, duration, content, topic, link, id) {
         return (
             <Card border="warning"
-                // style={{ width: "20rem", height: "100%" }}
-                className="mt-sm-5 mt-md-5 mx-md-4 mx-sm-3" 
+                className="mt-sm-5 mt-md-5 mx-md-4 mx-sm-3"
             >
-                <Card.Img variant="top" src="demo/100px180?text=Image cap" alt="Image"/>
+                {/* <Card.Img variant="top" src="demo/100px180?text=Image cap" alt="Image"/> */}
                 <Card.Body>
-                    <Card.Title>{heading}</Card.Title>
-                    <Card.Subtitle>
-                        {supervisor}
+                    <Card.Title><h4>{heading}</h4></Card.Title>
+                    {supervisor !== "" && <Card.Subtitle className="mb-2">
+                        <b>Supervisor: </b>{supervisor}
                     </Card.Subtitle>
-                    <Row>
+                    }
+                    {topic !== "" && <Row>
+                        <Col className="text-left mb-2">
+                            <b>Topic: </b>{topic}
+                        </Col>
+                    </Row>
+                    }
+                    <Row className="mb-2">
                         <Col className="text-left">
-                            {position}
+                            <b>Position: </b>{position}
                         </Col>
                         <Col className="text-right">
                             {duration}
                         </Col>
                     </Row>
                     <Card.Text>
-                        <i class="fas fa-map-marker-alt my-2">
-                            {content} <Card.Link target="_blank" href={link} className="text-right">See More</Card.Link>
+                        <i className="fas fa-map-marker-alt">
+                            {content}
                         </i>
+                        {link !== "" && <Card.Link target="_blank" href={link} className="text-right">See More</Card.Link>}
                     </Card.Text>
                 </Card.Body>
-            </Card>
+            </Card >
         )
     }
+
+    const listItems1 = db.experience.map((experience) => {
+        if (experience.id === 1 || experience.id === 2)
+            return block(experience.heading, experience.supervisor, experience.position, experience.duration, experience.content, experience.topic, experience.link)
+    });
+    const listItems2 = db.experience.map((experience) => {
+        if (experience.id === 3 || experience.id === 4)
+            return block(experience.heading, experience.supervisor, experience.position, experience.duration, experience.content, experience.topic, experience.link)
+    });
 
     return (
         <Container className="py-5" id="experience" style={{ backgroundColor: "" }}>
@@ -49,49 +64,22 @@ export default function Experience() {
             <Row className="mt-5">
                 <Col>
                     <CardGroup >
-                        {
-                            block(
-                                "Hindustan Aeronautics Limited",
-                                "Supervisor: Priyabrata Mallick",
-                                "Research Intern",
-                                "May - July 2019",
-                                `Performed qualitative and quantitative assessment of 6th Generation fighter aircraft.
-                                Optimized the process parameters for plasma coating of L.D. Sludge powder on AISI 304 SS.
-                                Characterized the powder’s chemical composition, particle size and morphology.`,
-                                "https://gourav-samal.netlify.com"
-                            )
-                        }
-
-                        {
-                            block(
-                                "Diagnostics Via Disk",
-                                "Advisor: Prof. A. Gopinath, MIT",
-                                "Project lead",
-                                "Jan - July 2020",
-                                `Developed a cheap CD/DVD drive based laser equipment for preparing bio-assays on CD/DVD discs to detect COVID 19, Malaria & perform antibody/antigen tests, rapid colorimetric tests; with high specificity and sensitivity.   `,
-                                "https://gourav-samal.netlify.com"
-                            )
-                        }
+                        {listItems1}
                     </CardGroup>
-                    
+                </Col>
+            </Row>
+            <Row className="mt-3">
+                <Col>
                     <CardGroup className="" style={styles}>
-
-                        {
-                            block(
-                                "Investigation of LD Sludge coatings as a potential TBC",
-                                "Supervisor: Dr. Ajit Behera",
-                                "Lead Researcher",
-                                "July 2019 - March 2020",
-                                "Investigated the thermal and oxidation properties of the LD sludge plasma coatings at 873K using TG-DSC. Investigated the wear resistance, micro-hardness distribution along the surface and depth of the substrate and various defects in the plasma coated sample.",
-                                "https://gourav-samal.netlify.com"
-                            )
-                        }
+                        {listItems2}
                     </CardGroup>
                 </Col>
             </Row>
         </Container >
     )
 }
+
+export default windowSize(Experience);
 
 const styles = {
     software: {
@@ -101,3 +89,4 @@ const styles = {
         color: "#05004E"
     }
 }
+

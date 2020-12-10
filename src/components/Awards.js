@@ -42,7 +42,7 @@ function Awards() {
 
     return (
         <Container className="py-5" id="awards" style={{ backgroundColor: "" }}>
-            <h2 className="my-4 d-flex justify-content-center" style={styles.software}>AWARDS & SCHOLARSHIPS</h2>
+            <h2 className="my-4 d-flex justify-content-center text-center" style={styles.software}>AWARDS & SCHOLARSHIPS</h2>
             <hr />
             <Row className="mt-5">
                 <Col>

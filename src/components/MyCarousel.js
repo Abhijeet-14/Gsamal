@@ -47,7 +47,7 @@ function MyCarousel({ windowWidth, windowHeight }) {
     // console.log(windowHeight);
     return (
         <>
-            <h2 className="my-4 d-flex justify-content-center" style={styles.software}>BLOGS</h2>
+            <h2 className="my-4 d-flex justify-content-center" style={styles.software}>BLOGS & ARTICLES</h2>
             <hr />
         <Container style={styles.container} className="mb-5 mt-5">
             <Row style={styles.Row}>

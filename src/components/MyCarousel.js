@@ -3,7 +3,7 @@ import { Button, Card, Col, Container, Image, Row } from 'react-bootstrap'
 
 import windowSize from 'react-window-size'
 
-import blog from '../shared/images/blog.png'
+import blog1 from '../shared/images/blog.png'
 
 import blog1_img0 from '../shared/images/b1_0.jpeg'
 // import blog1_img1 from '../shared/b1_1.jpeg'
@@ -12,27 +12,12 @@ import blog1_img0 from '../shared/images/b1_0.jpeg'
 // import blog1_img4 from '../shared/b1_4.jpeg'
 // import blog1_img5 from '../shared/b1_5.jpeg'
 
-const images = [blog, blog1_img0]
 
-const titles = [
-    "Slide 1",
-    "Slide 2",
-    // "Slide 3",
-    // "Slide 4",
-    // "Slide 5",
-    // "Slide 6",
-    // "Slide 1"
-]
+import db from '../shared/db/mycarousel.json'
 
-const bodies = [
-    "This is my slide 1",
-    "This is my slide 2",
-    // "This is my slide 3",
-    // "This is my slide 4",
-    // "This is my slide 5",
-    // "This is my slide 6",
-    // "This is my slide 1"
-]
+const images = [blog1, blog1_img0]
+
+
 
 
 function MyCarousel({ windowWidth, windowHeight }) {
@@ -61,7 +46,7 @@ function MyCarousel({ windowWidth, windowHeight }) {
     console.log("width: "+ windowWidth);
     // console.log(windowHeight);
     return (
-        <Container style={styles.container}>
+        <Container style={styles.container} className="mb-5">
             <Row style={styles.Row}>
                 {size &&
                     <Col style={styles.Col} >
@@ -76,12 +61,17 @@ function MyCarousel({ windowWidth, windowHeight }) {
                     }
                     <Card style={styles.Card}>
                         <Card.Body style={styles.Card}>
-                            <Card.Title>{titles[index]}</Card.Title>
+                            <Card.Title>{db.details[index].titles}</Card.Title>
                             <Card.Text>
-                                {bodies[index]} 
+                                {db.details[index].bodies} 
+                                <a href={db.details[index].pageLink} target="_blank"> Read More..</a>
                             </Card.Text>
+                            <Card.Link>
+                            </Card.Link>
+                            <Row className="mt-3 mx-auto">
                             <Button variant="primary"
                                 onClick={handlePrev}
+                                className="mr-2"
                             >
                                 prev
                             </Button>
@@ -90,6 +80,7 @@ function MyCarousel({ windowWidth, windowHeight }) {
                             >
                                 next
                             </Button>
+                            </Row>
                         </Card.Body>
                     </Card>
                 </Col>

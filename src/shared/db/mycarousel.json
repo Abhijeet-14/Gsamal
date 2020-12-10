@@ -1,0 +1,16 @@
+{
+    "details":[
+        {
+            "imageLink":"../shared/images/blog.png",
+            "titles":"Frugal Hacking",
+            "bodies":"My blog dedicated towards inventing, building and scaling-up “frugal science” tools to democratize access to science such as DIY microsope, diagnostics of deadly diseases like malaria and convening global citizen science communities to tackle planetary scale environmental challenges.",
+            "pageLink":"https://www.instagram.com/p/CEjCQZXFNkH/"
+        },
+        {
+            "imageLink":"../shared/images/b1_0.jpeg",
+            "titles":"SpaceX Starship",
+            "bodies":"Elon Musk’s new Mars rocket looks like it’s brought straight out of a H.G. Wells dream of the future. It doesn’t look like any current generation rocket by any shape or measure. It’s shorter and bulkier than any typical rocket. Most surprising of all; it’s made out of Stainless Steel. Stainless Steels have been forgotten since the 1960’s for making propellant tanks as seen in the famous Atlas rockets. Then why does Elon want to use it.",
+            "pageLink":"https://frugalhacking.blogspot.com/?m=1"
+        }
+    ]
+}

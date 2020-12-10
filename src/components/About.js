@@ -118,7 +118,7 @@ export default function About(props) {
                             </div>
                             <CardGroup className="mx-sm-4 mt-sm-4 my-4 text-center text-sm-left">
 
-                                <Card className="mx-sm-4 mt-3 mt-sm-0" style={styles.card}>
+                                <Card className="mx-sm-4 mt-3 mt-sm-0 text-sm-left text-center" style={styles.card}>
                                     <Card.Title style={styles.title}>Phone</Card.Title>
                                     <Card.Text style={styles.text}> +91-7205778418</Card.Text>
                                 </Card>
@@ -132,7 +132,7 @@ export default function About(props) {
                                     </Card.Text>
                                 </Card>
 
-                                <Card className="mx-sm-4 text-sm-right" style={styles.card}>
+                                <Card className="mx-sm-4 text-sm-right text-center" style={styles.card}>
                                     <Card.Title style={styles.title}>University Email</Card.Title>
                                     <Card.Text style={styles.text}> 117MM0639@nitrkl.ac.in</Card.Text>
                                 </Card>

@@ -5,7 +5,7 @@ import windowSize from 'react-window-size'
 
 import blog from '../shared/images/blog.png'
 
-import blog1_img0 from '../shared/b1_0.jpeg'
+import blog1_img0 from '../shared/images/b1_0.jpeg'
 // import blog1_img1 from '../shared/b1_1.jpeg'
 // import blog1_img2 from '../shared/b1_2.jpeg'
 // import blog1_img3 from '../shared/b1_3.jpeg'

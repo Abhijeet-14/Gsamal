@@ -32,11 +32,8 @@ export default function About(props) {
                     </strong>
                 </a>
                 <br />
-
                 A final year student at NIT Rourkela, pursuing Metallurgical and Materials engineering major and Mechanical engineering minor.
-
                 Passionate about the application of Materials science to solve day to day problems faced by the masses. I have a knack for the bio inspired materials.
-
                 My goal is to make a sustainable future with the help of Materials science and to solve the mysteries of nature through science and mimic it to make a better world.
             </p>
         </>
@@ -94,7 +91,7 @@ export default function About(props) {
                                     <Card.Text style={styles.text}> +91-7205778418</Card.Text>
                                 </Card>
 
-                                <Card className="mx-sm-4 text-sm-center " style={styles.card}>
+                                <Card className="mx-sm-4 text-center " style={styles.card}>
                                     <Card.Title style={styles.title}>Email</Card.Title>
                                     <Card.Text style={styles.text}  >
                                         <a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJZWPVqbXkpZXPbstFHRtvgTNWRQNtwVlRkBLnZGnWDLbvKhsCmxxLfZZGSXZlQzXvtjtmL" target="_blank">
@@ -103,7 +100,7 @@ export default function About(props) {
                                     </Card.Text>
                                 </Card>
 
-                                <Card className="mx-sm-4 text-sm-right" style={styles.card}>
+                                <Card className="mx-sm-4 text-sm-right text-center" style={styles.card}>
                                     <Card.Title style={styles.title}>University Email</Card.Title>
                                     <Card.Text style={styles.text}> 117MM0639@nitrkl.ac.in</Card.Text>
                                 </Card>

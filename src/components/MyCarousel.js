@@ -71,7 +71,7 @@ function MyCarousel({ windowWidth, windowHeight }) {
                 <Col style={styles.Col}>
                     {!size &&
                         <Col style={styles.Col} className="mb-3">
-                            <Image src={blog]} style={{ width: "100%", height: "100%" }} />
+                            <Image src={blog} style={{ width: "100%", height: "100%" }} />
                             {/* <Image src={images[index]} style={{ width: "100%", height: "100%" }} /> */}
                         </Col>
                     }

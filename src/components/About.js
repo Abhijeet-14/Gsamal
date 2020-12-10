@@ -24,7 +24,6 @@ export default function About(props) {
 
     const aboutMe = (
         <>
-            <h3 style={{ color: "#05004E" }}>Metallurgical {'&'} Materials Engg.</h3>
             <p style={styles.btext} className="mt-4">
                 I am an undergraduate student, pursuing B.TECH in METALLURGICAL {'&'} MATERIALS ENGINEERING,
                 at <a href="https://nitrkl.ac.in" style={{ color: "#05004E" }} >

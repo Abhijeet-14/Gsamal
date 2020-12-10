@@ -24,7 +24,6 @@ export default function About(props) {
 
     const aboutMe = (
         <>
-            <h3 style={{ color: "#05004E" }}>Metallurgical {'&'} Materials Engg.</h3>
             <p style={styles.btext} className="mt-4">
                 I am an undergraduate student, pursuing B.TECH in METALLURGICAL {'&'} MATERIALS ENGINEERING,
                 at <a href="https://nitrkl.ac.in" style={{ color: "#05004E" }} >
@@ -83,47 +82,7 @@ export default function About(props) {
                                     : <div className="mx-3 text-center">{aboutMe}</div>
                             }
                         </Col>
-
-                        {props.proImg === 1 &&
-                            <>
-                                <Col className="w-25 col-3 my-auto text-center"
-                                // style={{backgroundColor:"green"}} 
-                                >
-                                    <ImgClick handleClick={() => handleImage(profile, "Gourav Samal")}>
-                                        <img src={profile} alt="Profile Image: Gourav Samal"
-                                            className="rounded-circle float-right block-example border border-warning"
-                                        />
-                                    </ImgClick>
-                                </Col>
-                            </>
-                        }
-
-
                     </Row>
-                    {props.proImg === 0 &&
-                        <>
-                            <Row style={styles.row} className={`pt-0 pb-5 mx-auto text-center`}
-                            // ${props.proImg === 1 ? 3 : 0}
-                            >
-                                <Col className="text-center my-auto mx-auto"
-                                    // {/* <Col xs={12} xsOffset={6} */}
-                                    style={styles.proCol}
-                                    onClick={() => handleImage(image.showImage)}
-                                >
-                                    <div className="mx-auto text-center"
-                                    // style={{backgroundColor:"red"}}
-                                    >
-                                        <ImgClick handleClick={() => handleImage(profile, "Gourav Samal")}>
-                                            <img src={profile} alt="Profile Image: Gourav Samal" border="primary"
-                                                className=" rounded-circle block-example border border-warning"
-                                            />
-                                        </ImgClick>
-                                    </div>
-                                </Col>
-                                {/* <Col className="col-1"></Col> */}
-                            </Row>
-                        </>
-                    }
                     <Row>
                         <Col className="mx-sm-5 mx-0">
                             <div className="mx-auto mx-sm-auto" style={{ height: ".1em", backgroundColor: "#05004E" }} >

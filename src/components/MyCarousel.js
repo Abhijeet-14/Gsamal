@@ -3,6 +3,8 @@ import { Button, Card, Col, Container, Image, Row } from 'react-bootstrap'
 
 import windowSize from 'react-window-size'
 
+import blog from '../shared/images/blog.png'
+
 import blog1_img0 from '../shared/b1_0.jpeg'
 import blog1_img1 from '../shared/b1_1.jpeg'
 import blog1_img2 from '../shared/b1_2.jpeg'
@@ -38,7 +40,7 @@ function MyCarousel({ windowWidth, windowHeight }) {
     const [size, setSize] = useState(false);
 
     useEffect(
-        () => windowWidth < 750 ? setSize(false) : setSize(true)
+        () => windowWidth < 850 ? setSize(false) : setSize(true)
         , [windowWidth]
     )
 
@@ -62,13 +64,13 @@ function MyCarousel({ windowWidth, windowHeight }) {
         <Container style={styles.container}>
             <Row style={styles.Row}>
                 {size &&
-                    <Col style={styles.Col}>
-                        <Image src={images[index]} style={{ width: "100%", height: "100%" }} />
+                    <Col style={styles.Col} >
+                        <Image src={blog} style={{ width: "100%", height: "100%" }} />
                     </Col>
                 }
                 <Col style={styles.Col}>
                     {!size &&
-                        <Col style={styles.Col}>
+                        <Col style={styles.Col} className="mb-3">
                             <Image src={images[index]} style={{ width: "100%", height: "100%" }} />
                         </Col>
                     }
@@ -101,11 +103,11 @@ export default windowSize(MyCarousel);
 
 const styles = {
     container:{
-        backgroundColor: "#000",
+        backgroundColor: "#222",
         color: "#fff",
         padding: "1%"
     },
     Card: {
-        backgroundColor: "#000",
+        backgroundColor: "#333",
     }
 }

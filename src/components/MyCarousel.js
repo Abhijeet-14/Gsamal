@@ -46,7 +46,10 @@ function MyCarousel({ windowWidth, windowHeight }) {
     console.log("width: "+ windowWidth);
     // console.log(windowHeight);
     return (
-        <Container style={styles.container} className="mb-5">
+        <>
+            <h2 className="my-4 d-flex justify-content-center" style={styles.software}>BLOGS</h2>
+            <hr />
+        <Container style={styles.container} className="mb-5 mt-5">
             <Row style={styles.Row}>
                 {size &&
                     <Col style={styles.Col} >
@@ -86,6 +89,7 @@ function MyCarousel({ windowWidth, windowHeight }) {
                 </Col>
             </Row>
         </Container>
+        </>
     )
 }
 

@@ -43,14 +43,13 @@ function MyCarousel({ windowWidth, windowHeight }) {
         setIndex(newIndex);
     }
 
-    console.log("width: "+ windowWidth);
+    console.log("width: " + windowWidth);
     // console.log(windowHeight);
     return (
-        <>
-            <h2 className="my-4 d-flex justify-content-center" style={styles.software}>BLOGS & ARTICLES</h2>
+        <Container id="blogs" className="mt-5 py-5">
+            <h2 className="my-4 d-flex justify-content-center" style={styles.blogs}>BLOGS & ARTICLES</h2>
             <hr />
-        <Container style={styles.container} className="mb-5 mt-5">
-            <Row style={styles.Row}>
+            <Row style={styles.container} className="mt-5">
                 {size &&
                     <Col style={styles.Col} >
                         <Image src={images[index]} style={{ width: "100%", height: "100%" }} />
@@ -66,22 +65,22 @@ function MyCarousel({ windowWidth, windowHeight }) {
                         <Card.Body style={styles.Card}>
                             <Card.Title>{db.details[index].titles}</Card.Title>
                             <Card.Text>
-                                {db.details[index].bodies} 
+                                {db.details[index].bodies}
                                 <a href={db.details[index].pageLink} target="_blank"> Read More..</a>
                             </Card.Text>
                             <Card.Link>
                             </Card.Link>
                             <Row className="mt-3 mx-auto">
-                            <Button variant="primary"
-                                onClick={handlePrev}
-                                className="mr-2"
-                            >
-                                prev
+                                <Button variant="primary"
+                                    onClick={handlePrev}
+                                    className="mr-2"
+                                >
+                                    prev
                             </Button>
-                            <Button variant="primary"
-                                onClick={handleNext}
-                            >
-                                next
+                                <Button variant="primary"
+                                    onClick={handleNext}
+                                >
+                                    next
                             </Button>
                             </Row>
                         </Card.Body>
@@ -89,7 +88,6 @@ function MyCarousel({ windowWidth, windowHeight }) {
                 </Col>
             </Row>
         </Container>
-        </>
     )
 }
 
@@ -97,12 +95,18 @@ export default windowSize(MyCarousel);
 
 
 const styles = {
-    container:{
+    container: {
         backgroundColor: "#222",
         color: "#fff",
         padding: "1%"
     },
     Card: {
         backgroundColor: "#333",
+    },
+    blogs: {
+        fontFamily: "Arial",
+        fontSize: "32px",
+        fontWeight: "bold",
+        color: "#05004E"
     }
 }

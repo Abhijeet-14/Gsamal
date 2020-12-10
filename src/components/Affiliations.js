@@ -39,7 +39,7 @@ function Affiliations() {
 
     return (
         <Container className="py-5" id="affiliations" style={{ backgroundColor: "" }}>
-            <h2 className="my-4 d-flex justify-content-center" style={styles.software}>Affiliations</h2>
+            <h2 className="my-4 d-flex justify-content-center" style={styles.software}>AFFILIATIONS</h2>
             <hr />
             <Row className="mt-5">
                 <Col>

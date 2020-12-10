@@ -130,6 +130,17 @@ function Header(props) {
                                 AFFILITATIONS
                             </Nav.Link>
                         </Nav.Item>
+                        <Nav.Item
+                            css={styles.navItem}
+                        >
+                            <Nav.Link href="#blogs"
+                                eventKey="blogs"
+                                css={styles.navLink}
+                                className="text-white"
+                            >
+                                BLOGS
+                            </Nav.Link>
+                        </Nav.Item>
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>

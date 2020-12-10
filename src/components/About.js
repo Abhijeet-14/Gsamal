@@ -24,7 +24,7 @@ export default function About(props) {
 
     const aboutMe = (
         <>
-            <h3 style={{ color: "#05004E" }}>Food Process Engg.</h3>
+            <h3 style={{ color: "#05004E" }}>Metallurgical {'&'} Materials Engg.</h3>
             <p style={styles.btext} className="mt-4">
                 I am an undergraduate student, pursuing B.TECH in METALLURGICAL {'&'} MATERIALS ENGINEERING,
                 at <a href="https://nitrkl.ac.in" style={{ color: "#05004E" }} >
@@ -34,7 +34,11 @@ export default function About(props) {
                 </a>
                 <br />
 
-                Being fascinated by software and websites, I started practicing web development in my 2nd year of college and mobile application development in my spring semester of 3rd year of college.
+                A final year student at NIT Rourkela, pursuing Metallurgical and Materials engineering major and Mechanical engineering minor.
+
+                Passionate about the application of Materials science to solve day to day problems faced by the masses. I have a knack for the bio inspired materials.
+
+                My goal is to make a sustainable future with the help of Materials science and to solve the mysteries of nature through science and mimic it to make a better world.
             </p>
         </>
     )
@@ -142,7 +146,7 @@ export default function About(props) {
 
                                 <Card className="mx-sm-4 text-sm-right" style={styles.card}>
                                     <Card.Title style={styles.title}>University Email</Card.Title>
-                                    <Card.Text style={styles.text}> 117fp0719@nitrkl.ac.in</Card.Text>
+                                    <Card.Text style={styles.text}> 117MM0639@nitrkl.ac.in</Card.Text>
                                 </Card>
                             </CardGroup>
                         </Col>

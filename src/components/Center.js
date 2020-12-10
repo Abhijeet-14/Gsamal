@@ -27,13 +27,13 @@ function Center(props) {
         experience:0,
         projects:0,
         software:0,
-        myCarousel: 1,
+        myCarousel: 0,
         awards: 0,
         affilations: 0,
     });
 
     useEffect(
-        () => props.windowWidth < 700 ? setOpen({ ...open, proImg: 0 }) : setOpen({ ...open, proImg: 1 })
+        () => props.windowWidth < 850 ? setOpen({ ...open, proImg: 0 }) : setOpen({ ...open, proImg: 1 })
         , [props.windowWidth]
     )
 
